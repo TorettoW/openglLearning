@@ -29,9 +29,13 @@ int main() {
 		return -1;
 	}
 	
+	while (!glfwWindowShouldClose(window)) {
+		glfwSwapBuffers(window);
+		glfwPollEvents();
 
+	}
 
-
+	glfwTerminate();
 
 	return 0;
 }
